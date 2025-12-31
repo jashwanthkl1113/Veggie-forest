@@ -14,6 +14,7 @@ spec:
     spec:
       containers:
       - name: veggie-forest
-        image: jashwanthk1113/veggie-forest-site:latest
+        image: jashwanthkl1113/veggie-forest-site:latest
         ports:
         - containerPort: 80
+
