@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: veggie-forest
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: veggie-forest
+  template:
+    metadata:
+      labels:
+        app: veggie-forest
+    spec:
+      containers:
+      - name: veggie-forest
+        image: jashwanthk1113/veggie-forest-site:latest
+        ports:
+        - containerPort: 80
